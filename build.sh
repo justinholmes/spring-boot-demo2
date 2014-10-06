@@ -10,5 +10,5 @@ BUILD_NUMBER="$2"
 
 DOCKER_IMAGE="${POM_ARTIFACTID}:${BUILD_NUMBER}"
 
-docker build -t "${DOCKER_IMAGE}" .
-docker tag "${DOCKER_IMAGE}" "${POM_ARTIFACTID}"/latest
+sudo docker build -t "${DOCKER_IMAGE}" .
+sudo docker tag "${DOCKER_IMAGE}" "${POM_ARTIFACTID}"/latest
