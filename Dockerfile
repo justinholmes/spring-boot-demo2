@@ -9,6 +9,4 @@ RUN yes | apt-get install -y oracle-java8-installer
 
 # Start the permission service
 
-ADD target/bootdemo.jar /tmp/demo.jar
-COPY run.sh /usr/local/bin/run.sh
-ENTRYPOINT ["/usr/local/bin/run.sh"] 
+ADD target/bootdemo.jar /tmp/application.jar
